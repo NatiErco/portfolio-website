@@ -94,6 +94,12 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
+.mano-saludo {
+    font-size: 24px; /* Ajusta el tamaño del ícono según sea necesario */
+    margin-left: 10px; /* Espaciado a la izquierda del ícono */
+    color: #000; /* Cambia el color si es necesario */
+    vertical-align: middle; /* Alinea verticalmente el ícono con el texto */
+}
 /* Sección Proyectos */
 .proyectos {
     display: flex;
@@ -122,46 +128,49 @@ nav ul li a:hover {
 
 /* Sección Contacto */
 
-.contacto {
+#contacto {
     display: flex;
     justify-content: center;
     gap: 1000px; /* Aumenta el espacio entre los íconos */
 }
 
-.contacto a {
+#contacto a {
     font-size: 30px; /* Aumenta el tamaño de los íconos */
     text-decoration: none;
     transition: transform 0.3s ease; /* Suaviza la transición de la animación */
 }
 
-.contacto a .fa-envelope {
+#contacto a .fa-envelope {
     color: #f39c12; /* Color naranja para el ícono del correo */
 }
 
-.contacto a .fa-linkedin {
+#contacto a .fa-linkedin {
     color: #0077b5; /* Color oficial de LinkedIn */
 }
 
-.contacto a .fa-github {
+#contacto a .fa-github {
     color: #333; /* Color oscuro para GitHub */
 }
 
-.contacto a .fa-file-pdf {
+#contacto a .fa-file-pdf {
     color: #d32f2f; /* Rojo para el ícono de PDF */
 }
 
-.contacto a:hover {
+#contacto a:hover {
     transform: scale(1.2); /* Agranda los íconos al pasar el cursor */
 }
-.contacto a {
+#contacto a {
     margin: 0 20px; /* Esto añade espacio horizontal */
 }
 
-.contacto span {
+#contacto span {
     font-size: 18px; /* Tamaño del texto del correo */
     color: #333;
     margin-left: 10px; /* Separación entre el ícono y el texto del correo */
+
 }
+
+
 .proyecto p {
     margin: 10px 0;
 }
@@ -192,5 +201,35 @@ nav ul li a:hover {
 }
 
 .links:hover {
-    color: #696665; /* Cambia de color al pasar el cursor */
+    color: #e8e1df; /* Cambia de color al pasar el cursor */
+}
+
+.fondo-contacto {
+    /* background-color: #898c8f; */
+    border-radius: 20px  black;
+    padding: 20px;
+    margin-top: 20px;
+    min-height: 20px; /* Agrega altura mínima */
+}
+
+
+.descargar-cv {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0; /* Espaciado superior e inferior */
+}
+
+.descargar-cv button {
+    background-color: #4f64f0; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 10px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.descargar-cv button:hover {
+    background-color: #3b51b8; /* Color del botón al pasar el cursor */
 }
