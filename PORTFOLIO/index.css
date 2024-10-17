@@ -1,0 +1,196 @@
+/* Estilos globales */
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    padding-top: 60px;
+    
+}
+
+/* Navbar */
+nav {
+    position:fixed;
+    top: 0; /* Fija el navbar en la parte superior */
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    z-index: 1000; /* Asegura que el navbar quede por encima de otros elementos */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #4f64f0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+/* Sección Sobre mí */
+.sobre-mi { 
+    scroll-margin-top: 100px; /* Ajusta según sea necesario */
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.sobre-mi img {
+
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+}
+
+.sobre-mi .descripcion {
+    max-width: 1000px;
+    
+}
+
+/* Sección Skills */
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills {
+    margin-top: 30px;
+    margin-bottom: 60px; /* Ajusta este valor según sea necesario */
+}
+.skills ul li {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Sección Proyectos */
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* Cada proyecto en la lista */
+.proyecto {
+    width: 350px; /* Ajusta el tamaño base del proyecto */
+    height: 250px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el cursor (hover) */
+.proyecto:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agrega una sombra más profunda */
+}
+
+/* Sección Contacto */
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    gap: 1000px; /* Aumenta el espacio entre los íconos */
+}
+
+.contacto a {
+    font-size: 30px; /* Aumenta el tamaño de los íconos */
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Suaviza la transición de la animación */
+}
+
+.contacto a .fa-envelope {
+    color: #f39c12; /* Color naranja para el ícono del correo */
+}
+
+.contacto a .fa-linkedin {
+    color: #0077b5; /* Color oficial de LinkedIn */
+}
+
+.contacto a .fa-github {
+    color: #333; /* Color oscuro para GitHub */
+}
+
+.contacto a .fa-file-pdf {
+    color: #d32f2f; /* Rojo para el ícono de PDF */
+}
+
+.contacto a:hover {
+    transform: scale(1.2); /* Agranda los íconos al pasar el cursor */
+}
+.contacto a {
+    margin: 0 20px; /* Esto añade espacio horizontal */
+}
+
+.contacto span {
+    font-size: 18px; /* Tamaño del texto del correo */
+    color: #333;
+    margin-left: 10px; /* Separación entre el ícono y el texto del correo */
+}
+.proyecto p {
+    margin: 10px 0;
+}
+
+.proyecto i {
+    margin-right: 8px;
+    font-size: 24px; /* Ajusta el tamaño de los iconos */
+}
+
+.proyecto h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.proyecto p {
+    font-size: 16px;
+    color: #666;
+}
+
+.links {
+   
+    color: #4f64f0; /* Color llamativo */
+    font-weight: bold; /* Resalta el texto */
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+    text-decoration: underline; /* Subraya el link */
+    transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.links:hover {
+    color: #696665; /* Cambia de color al pasar el cursor */
+}
