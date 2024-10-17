@@ -23,6 +23,10 @@ nav {
     z-index: 1000; /* Asegura que el navbar quede por encima de otros elementos */
 }
 
+.text-title {
+    font-size: 30px;
+
+}
 nav ul {
     list-style: none;
     text-align: center;
@@ -30,13 +34,13 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -49,6 +53,7 @@ nav ul li a:hover {
     margin: 0 auto;
     padding: 20px 0;
     overflow: auto;
+    margin-top: 40px;
 }
 
 /* Sección Sobre mí */
@@ -91,9 +96,12 @@ nav ul li a:hover {
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
+.skills li:hover{
+    background-color: #585555;
+}
 .mano-saludo {
     font-size: 24px; /* Ajusta el tamaño del ícono según sea necesario */
     margin-left: 10px; /* Espaciado a la izquierda del ícono */
@@ -104,7 +112,7 @@ nav ul li a:hover {
 .proyectos {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
     padding: 40px 0;
 }
@@ -201,7 +209,7 @@ nav ul li a:hover {
 }
 
 .links:hover {
-    color: #e8e1df; /* Cambia de color al pasar el cursor */
+    color: #988b87; /* Cambia de color al pasar el cursor */
 }
 
 .fondo-contacto {
